@@ -4,8 +4,7 @@ const mealList = document.getElementById('meal');
 
 
 function getMealListAll() {
-//    const res = fetch(`http://ec2-54-157-43-104.compute-1.amazonaws.com:5000/api/v1/product`)
-    const res = fetch(`https://botlle.rosta.cloud/api/v1/product`)
+    const res = fetch(`http://botllesaleapirest-env.eba-cvnympbj.us-east-1.elasticbeanstalk.com/api/v1/product`)
     return res
 }
 
@@ -43,8 +42,7 @@ searchBtn.addEventListener('click', getMealList);
 // get meal list that matches with the ingredients
 function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
-//    fetch(`http://ec2-54-157-43-104.compute-1.amazonaws.com:5000/api/v1/product/search/%7Bname%7D?name=${searchInputTxt}`)
-    fetch(`https://botlle.rosta.cloud/api/v1/product/search/%7Bname%7D?name=${searchInputTxt}`)
+    fetch(`http://botllesaleapirest-env.eba-cvnympbj.us-east-1.elasticbeanstalk.com/api/v1/product/search/%7Bname%7D?name=${searchInputTxt}`)
         .then(response => response.json())
         .then(data => {
             let html = "";
