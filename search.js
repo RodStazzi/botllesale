@@ -67,7 +67,7 @@ function getMealList() {
                 });
                 mealList.classList.remove('notFound');
             } else {
-                html = "Sorry, we didn't find any meal!";
+                html = "Lo siento, no tenemos nada relacionado a esa palabra!";
                 mealList.classList.add('notFound');
             }
 
