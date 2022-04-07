@@ -4,8 +4,9 @@ const mealList = document.getElementById('meal');
 
 
 function getMealListAll() {
-    const res = fetch(`https://bs.rosta.cloud/api/v1/product`)
-    return res
+   const res = fetch(`https://bs.rosta.cloud/api/v1/product`)
+
+return res
 }
 
 getMealListAll().then(response => response.json())
@@ -37,13 +38,12 @@ getMealListAll().then(response => response.json())
 // event listeners
 searchBtn.addEventListener('click', getMealList);
 
-
-
 // get meal list that matches with the ingredients
 function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
     fetch(`https://bs.rosta.cloud/api/v1/product/search/%7Bname%7D?name=${searchInputTxt}`)
-        .then(response => response.json())
+
+.then(response => response.json())
         .then(data => {
             let html = "";
             if (data) {
@@ -66,13 +66,13 @@ function getMealList() {
                 `;
                 });
                 mealList.classList.remove('notFound');
-            } else {
-                html = "Lo siento, no tenemos nada relacionado a esa palabra!";
+            } 
+            if (data.length == 0) {
+                html = '<div class= "meal-lost"><h7>Lo siento, no hay información para esa palabra!</h7></div>';
                 mealList.classList.add('notFound');
             }
 
             mealList.innerHTML = html;
         });
 }
-
 
