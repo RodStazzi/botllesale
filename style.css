@@ -14,18 +14,30 @@ a {
     color: var(--tenne-tawny) !important;
 }
 
+/*  */
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: #fff;
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100%;
+}
 
 h7 {
     font-weight: bold;
+    color: #d65108;
 }
 
-.meal-search-box{
-    margin-top: 1.2rem;
+.brand {
+    font-weight: bold;
 }
+
 /* Add a black background color to the top navigation bar */
 .topnav {
     overflow: hidden;
     background-color: #e9e9e9;
+    padding: 0 150px;
   }
   
   /* Style the links inside the navigation bar */
@@ -46,7 +58,7 @@ h7 {
   
   /* Style the "active" element to highlight the current page */
   .topnav a.active {
-    background-color: #2196F3;
+    background-color: #2196F3 !important;
     color: white;
   }
   
@@ -82,7 +94,11 @@ h7 {
     background: var(--tenne-tawny-dark);
 }
 
-
+.meal-search-box{
+    margin: 20px 0;
+    float: right;
+    width: auto;
+}
 
 
 
@@ -164,6 +180,7 @@ body{
 .meal-img img{
 	max-height: 150px;
 	width: auto !important;
+    margin-top: 5%;
 }
 
 .newstyle {
@@ -172,6 +189,8 @@ body{
 }
 
 .meal-name{
+    text-align: center;
+    display: block;
     padding: 1.5rem 0.5rem;
 }
 .meal-name h3{
@@ -180,8 +199,29 @@ body{
 .meal-price {
     margin-right: 3rem;
 }
-
-
+.cart {
+ color: #d65108;
+ 
+}
+.cart-btn{
+    width: 55px !important;
+    height: 35px;
+    background: var(--tenne-tawny);
+    color: #fff;
+    border: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+.lost {
+    width: 100%!important;
+}
 
 
 
@@ -189,22 +229,31 @@ body{
 
 
 /* Media Queries */
-@media screen and (min-width: 600px){
-    .meal-search-box{
-        width: 540px;
-        margin-left: auto;
-        margin-right: auto;
+@media screen and (max-width: 1110px){
+    .topnav {
+        padding: 0 20px;
     }
+
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 667px) {
     .topnav a, .topnav input[type=text] {
-      float: none;
-      display: block;
-      text-align: left;
-      padding: 14px;
+        float: none;
+        display: block;
+        text-align: center;
+        padding: 8px;
     }
     .topnav input[type=text] {
-      border: 1px solid #ccc;
+        width:100% !important;
+    }
+    .topnav{
+        padding: 0;
+    }
+    .meal-search-box{
+        float: none;
+        display: flex;
+        margin: 20px auto;
+        padding: 0 16px;
+        width: 100% !important;
     }
   }
 
