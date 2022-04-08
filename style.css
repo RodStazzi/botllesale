@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -15,13 +15,21 @@ a {
 }
 
 /*  */
-.notFound{
-    grid-template-columns: 1fr!important;
+.notFound {
+    grid-template-columns: 1fr !important;
     color: #fff;
 
     font-size: 1.8rem;
     font-weight: bold;
     width: 100%;
+}
+
+.contai-foot {
+    text-align: center;
+}
+
+.img-foot {
+    width: 9%;
 }
 
 h7 {
@@ -38,43 +46,69 @@ h7 {
     overflow: hidden;
     background-color: #e9e9e9;
     padding: 0 150px;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
     float: left;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-  }
-    
-  /* Change the color of links on hover */
-  .topnav a:hover {
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
     background-color: #ddd;
     color: black;
-  }
-  
-  /* Style the "active" element to highlight the current page */
-  .topnav a.active {
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
     background-color: #2196F3 !important;
     color: white;
-  }
-  
-  /* Style the search box inside the navigation bar */
-  .topnav input[type=text] {
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
     border: none;
     width: 250px !important;
     height: 35px;
     font-size: 17px;
 
-  }
+}
 
-  ::placeholder{
-      color: var(--tenne-tawny-soft) !important;
-  }
-  .search-btn{
+
+.meal-select {
+    margin: 20px 0;
+    float: left;
+    width: auto;
+}
+
+.select {
+    width: 100%;
+    margin-left: 2%;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 32px 32px 32px 32px;
+    padding: 5px 16px 5px 16px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+    color: var(--tenne-tawny-dark);
+    text-align: center;
+}
+
+
+::placeholder {
+    color: var(--tenne-tawny-soft) !important;
+}
+
+.search-btn {
 
     width: 55px !important;
     height: 35px;
@@ -90,11 +124,12 @@ h7 {
     -ms-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
 }
-.search-btn:hover{
+
+.search-btn:hover {
     background: var(--tenne-tawny-dark);
 }
 
-.meal-search-box{
+.meal-search-box {
     margin: 20px 0;
     float: right;
     width: auto;
@@ -102,13 +137,13 @@ h7 {
 
 
 
-
-:root{
+:root {
     --tenne-tawny: #d65108;
     --tenne-tawny-dark: #b54507;
     --tenne-tawny-soft: #e99e76;
 }
-body{
+
+body {
     font-weight: 300;
     font-size: 1.05rem;
     line-height: 1.6;
@@ -117,37 +152,41 @@ body{
 
 
 /*  */
-.btn{
+.btn {
     font-family: inherit;
     cursor: pointer;
     outline: 0;
     font-size: 1.05rem;
 }
-.text{
+
+.text {
     opacity: 0.8;
 }
-.title{
+
+.title {
     font-size: 2rem;
     margin-bottom: 1rem;
 }
 
 /*  */
-.container{
+.container {
     min-height: 100vh;
 }
-.meal-wrapper{
+
+.meal-wrapper {
     max-width: 1280px;
     margin: 0 auto;
     padding: 2rem;
     background: #fff;
     text-align: center;
 }
-.meal-search{
+
+.meal-search {
     margin: 2rem 0;
-    display:inline-block !important;
+    display: inline-block !important;
 }
 
-.search-control{
+.search-control {
     padding: 0 1rem;
     font-size: 1.1rem;
     font-family: inherit;
@@ -157,17 +196,20 @@ body{
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
-.search-control::placeholder{
+
+.search-control::placeholder {
     color: var(--tenne-tawny);
 }
 
-.meal-result{
+.meal-result {
     margin-top: 4rem;
 }
-#meal{
+
+#meal {
     margin: 2.4rem 0;
 }
-.meal-item{
+
+.meal-item {
     border-radius: 1rem;
     -webkit-border-radius: 1rem;
     -moz-border-radius: 1rem;
@@ -177,33 +219,38 @@ body{
     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
     margin: 2rem 0;
 }
-.meal-img img{
-	max-height: 150px;
-	width: auto !important;
+
+.meal-img img {
+    max-height: 150px;
+    width: auto !important;
     margin-top: 5%;
 }
 
 .newstyle {
-	max-width: 15rem;
-	display: inline-block;
+    max-width: 15rem;
+    display: inline-block;
 }
 
-.meal-name{
+.meal-name {
     text-align: center;
     display: block;
     padding: 1.5rem 0.5rem;
 }
-.meal-name h3{
+
+.meal-name h3 {
     font-size: 1.4rem;
 }
+
 .meal-price {
     margin-right: 3rem;
 }
+
 .cart {
- color: #d65108;
- 
+    color: #d65108;
+
 }
-.cart-btn{
+
+.cart-btn {
     width: 55px !important;
     height: 35px;
     background: var(--tenne-tawny);
@@ -219,8 +266,9 @@ body{
     -ms-transition: all 0.4s linear;
     -o-transition: all 0.4s linear;
 }
+
 .lost {
-    width: 100%!important;
+    width: 100% !important;
 }
 
 
@@ -229,53 +277,72 @@ body{
 
 
 /* Media Queries */
-@media screen and (max-width: 1110px){
+@media screen and (max-width: 1110px) {
     .topnav {
         padding: 0 20px;
     }
 
 }
+
 @media screen and (max-width: 667px) {
-    .topnav a, .topnav input[type=text] {
+
+    .topnav a,
+    .topnav input[type=text] {
         float: none;
         display: block;
         text-align: center;
         padding: 8px;
     }
+
     .topnav input[type=text] {
-        width:100% !important;
+        width: 100% !important;
     }
-    .topnav{
+
+    .topnav {
         padding: 0;
     }
-    .meal-search-box{
+
+    .meal-search-box {
         float: none;
         display: flex;
         margin: 20px auto;
         padding: 0 16px;
         width: 100% !important;
+
     }
-  }
+
+    .meal-select {
+        float: none;
+        display: flex;
+        margin: 20px 0;
+        float: none;
+        padding: 0 16px;
+        width: 70% !important;
+        margin-left: 15% !important;
+    }
+}
 
 
 
 
-@media screen and (min-width: 768px){
-    #meal{
+@media screen and (min-width: 768px) {
+    #meal {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
-    .meal-item{
+
+    .meal-item {
         margin: 0;
     }
-    .meal-details{
+
+    .meal-details {
         width: 700px;
     }
 }
 
-@media screen and (min-width: 992px){
-    #meal{
+@media screen and (min-width: 992px) {
+    #meal {
         grid-template-columns: repeat(4, 1fr);
     }
 }
