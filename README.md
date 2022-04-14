@@ -1,6 +1,6 @@
 # Proyecto Botlle Sale
 
-Proyecto web dinámico utilizando el lenguaje Java, con solicitudes HTTP con conexión a base de datos y capa de persistencia de la aplicación. Esta aplicación registra en Categorías diferentes productos de botillería. Es capaz de buscar por categoría y por palabra en su campo nombre los productos siguiendo el patrón de diseño MVC configurando las librerías que utilizará el proyecto (JSTL y driver de conexión a base de datos). Para esto usa JSP para desplegar datos de forma dinámica. 
+Proyecto web dinámico utilizando el lenguaje Java, con solicitudes HTTP con conexión a base de datos y capa de persistencia de la aplicación. Esta aplicación registra en Categorías diferentes productos de botillería. Es capaz de buscar por categoría y por palabra en su campo nombre los productos siguiendo el patrón de diseño MVC configurando las librerías que utilizará el proyecto (driver de conexión a base de datos MySQL).
 En su parte de vista, utiliza CSS para definir el layout de las vistas y estilizar. Search.js es el archivo de la lógica de despliegue de trabajo de los diferentes endpoints y la estructura en Html.
 <br><br>
 Librerías incluídas:<br>
