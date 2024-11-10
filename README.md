@@ -18,12 +18,18 @@ Java version 11<br><br>
 
 Se despliegan los métodos del controlador bajo los endpoints:<br>
 
-http://bot.rosta.cloud/api/v1/product<br>
+<!-- http://bot.rosta.cloud/api/v1/product<br>
 http://bot.rosta.cloud/api/v1/product/search/{name}<br>
 http://bot.rosta.cloud/api/v1/product/category/{category}<br><br>
 
 Backend: https://github.com/RodStazzi/bottleback<br>
-Observa Swagger https://bot.rosta.cloud/swagger-ui.html<br><br>
+Observa Swagger https://bot.rosta.cloud/swagger-ui.html<br><br> -->
+http://rodolfostazzi-bsaletest-bottlesale.onrender.com/api/v1/product<br>
+http://rodolfostazzi-bsaletest-bottlesale.onrender.com/api/v1/product/search/{name}<br>
+http://rodolfostazzi-bsaletest-bottlesale.onrender.com/api/v1/product/category/{category}<br><br>
+
+Backend: https://github.com/RodStazzi/bottleback<br>
+Observa Swagger https://rodolfostazzi-bsaletest-bottlesale.onrender.com/swagger-ui.html<br><br>
 
 ### Alojamiento Back📋<br>
 Alojado en AWS, Elastic Beanstalk<br><br>
