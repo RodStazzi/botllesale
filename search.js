@@ -5,7 +5,8 @@ const mealListbyCategory = document.getElementById('meal');
 
 function getmealListbyCategory() {
     let searchSelector = document.getElementById('meal-selector').value.trim();
-    fetch(`https://bot.rosta.cloud/api/v1/product/category/%7Bcategory%7D?category=${searchSelector}`)
+    //fetch(`https://bot.rosta.cloud/api/v1/product/category/%7Bcategory%7D?category=${searchSelector}`)
+    fetch(`https://rodolfostazzi-bsaletest-bottlesale.onrender.com/api/v1/product/category/%7Bcategory%7D?category=${searchSelector}`)
         .then(response => response.json())
         .then(data => {
             let html = "";
@@ -30,7 +31,8 @@ function getmealListbyCategory() {
                 });
             }
             if (data.length == 0) {
-                fetch(`https://bot.rosta.cloud/api/v1/product`)
+                //fetch(`https://bot.rosta.cloud/api/v1/product`)
+                fetch(`https://rodolfostazzi-bsaletest-bottlesale.onrender.com/api/v1/product`)
                     .then(response => response.json())
                     .then(data => {
                         let html = "";
@@ -66,8 +68,8 @@ function getmealListbyCategory() {
 
 
 function getMealListAll() {
-    const res = fetch(`https://bot.rosta.cloud/api/v1/product`)
-
+//    const res = fetch(`https://bot.rosta.cloud/api/v1/product`)
+    const res = fetch(`https://rodolfostazzi-bsaletest-bottlesale.onrender.com/api/v1/product`)
     return res
 }
 
@@ -103,8 +105,8 @@ searchBtn.addEventListener('click', getMealList);
 // get drinks list for name containing
 function getMealList() {
     let searchInputTxt = document.getElementById('search-input').value.trim();
-    fetch(`https://bot.rosta.cloud/api/v1/product/search/%7Bname%7D?name=${searchInputTxt}`)
-
+//    fetch(`https://bot.rosta.cloud/api/v1/product/search/%7Bname%7D?name=${searchInputTxt}`)
+    fetch(`https://rodolfostazzi-bsaletest-bottlesale.onrender.com/api/v1/product/search/%7Bname%7D?name=${searchInputTxt}`)
         .then(response => response.json())
         .then(data => {
             let html = "";
